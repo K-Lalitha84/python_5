@@ -357,3 +357,96 @@ enter a row value 4
 2 3 
 4 5 6 
 7 8 9 10 
+
+
+code--17
+#symmetric right angle triangle
+n=5
+for i in range(1,n+1):
+    print(' '*(n-i),end=' ')
+    for j in range(i):
+        print('*',end='')
+    print()
+outpur::
+     *
+    **
+   ***
+  ****
+ *****
+ code--18
+ 
+n=5
+for i in range(1,n+1):
+    print(' '*(n-i),end=' ')
+    for j in range(i):
+        print('* ',end='')
+    print()
+for i in range(n-1,0,-1):
+    print(' '*(n-i),end='')
+    for j in range(i):
+        print(' *',end='')
+    print()
+output::
+* 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+  * * * *
+   * * *
+    * *
+     *
+codee-19
+#left aligned half triangle
+n=5
+for i in range(1,n+1):
+    print(' '*(n-i),end=' ')
+    for j in range(i):
+        print('*',end='')
+    print()
+for i in range(n-1,0,-1):
+    print(' '*(n-i),end='')
+    for j in range(i):
+        print('*',end='')
+    print()
+output::
+     *
+    **
+   ***
+  ****
+ *****
+ ****
+  ***
+   **
+    *
+
+
+code--19
+r=4
+for i in range(r):
+    for j in range(r-i-1):
+        print(' ',end=' ')
+    for j in range(r):
+        print('*',end=' ')
+    print()
+ output::
+      * * * * 
+    * * * * 
+  * * * * 
+* * * * 
+code--20::
+#perfect rhombus
+r=3
+for i in range(1,r+1):
+    print(' '*(r-i)+ '*'*(2*i-1))
+for i in range(r-1,0,-1):
+    print(' '*(r-i)+ '*'*(2*i-1))
+
+output::
+  *
+ ***
+*****
+ ***
+  *
+
+
